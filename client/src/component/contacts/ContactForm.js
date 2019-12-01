@@ -50,7 +50,7 @@ const ContactForm = () =>  {
 
     return (
         <form onSubmit={onSubmit}>
-            <h2 className='text-primary text-center'>{current? 'Edit Contact' : 'Add A Contact'}</h2>
+            <h2 className='text-primary text-center'>{ current? 'Edit Contact' : 'Add A Contact' }</h2>
             <input style={inputStyle} className='form-control' type='text' placeholder='Name' name='name' value={name} onChange={onChange} />
             <input style={inputStyle} className='form-control' type='text' placeholder='Email' name='email' value={email} onChange={onChange} />
             <input style={inputStyle} className='form-control' type='text' placeholder= 'Phone' name='phone' value={phone} onChange={onChange} />
