@@ -38,9 +38,12 @@ const Navbar = ({ title, icon }) => {
             </li>
         </Fragment>
     );
+    const style = {
+        backgroundColor: 'brown'
+    }
 
     return (
-        <div className= "navbar bg-primary">
+<div className= "navbar bg-secondary" style= {style}>
             <h1>
                 <i className= {icon} /> {title}
             </h1>
@@ -57,8 +60,8 @@ Navbar.protoTypes = {
 };
 
 Navbar.defaultProps = {
-    title: 'Contact Keeper',
-    icon: 'fas fa-id-card-alt'
+    title: 'Phone Book',
+    icon: 'far fa-address-book'
 }
 
 export default Navbar

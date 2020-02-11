@@ -44,24 +44,29 @@ const Login = (props) => {
        })
       }
     }
+
+    const inputStyle = {marginLeft: '20px'}
     
 
+
     return (
+        <div className="auth-body">
         <div className='form-container'>
             <h1 className='text-center title'>
-                Account <span className='text-primary'>Login</span>
+                Account <span className='text-warning'>Login</span>
             </h1>
             <form onSubmit={onSubmit}>
                 <div className='form-group'>
                     <label htmlFor='email'>Email:</label>
-                    <input type='email' name='email' value={email} onChange={onChange} required/>
+                    <input style={inputStyle} type='email' name='email' value={email} onChange={onChange} required/>
                 </div>
                 <div className='form-group'>
                     <label htmlFor='password'>Password:</label>
-                    <input type='password' name='password' value={password} onChange={onChange} required/>
+                    <input style={inputStyle} type='password' name='password' value={password} onChange={onChange} required/>
                 </div>
-                <input type='submit' value='Login' className='btn btn-primary btn-block' />
+                <input type='submit' value='Login' className='btn btn-secondary btn-block' />
             </form>
+        </div>
         </div>
     )
 }

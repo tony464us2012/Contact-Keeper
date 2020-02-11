@@ -27,6 +27,7 @@ const ContactForm = () =>  {
     });
 
     const inputStyle = {width: '100%', margin: '1rem 0'};
+    const radioStyle = {marginRight: '-130px', marginLeft: '80px'};
 
     const { name, email, phone, type } = contact;
 
@@ -54,10 +55,10 @@ const ContactForm = () =>  {
             <input style={inputStyle} className='form-control' type='text' placeholder='Name' name='name' value={name} onChange={onChange} />
             <input style={inputStyle} className='form-control' type='text' placeholder='Email' name='email' value={email} onChange={onChange} />
             <input style={inputStyle} className='form-control' type='text' placeholder= 'Phone' name='phone' value={phone} onChange={onChange} />
-            <h5>Contact Type</h5>
-            <input type='radio' name='type' value='personal' checked={type === 'personal'} onChange={onChange} /> Personal{' '}
-            <input type='radio' name='type' value='professional' checked={type === 'professional'} onChange={onChange} /> Professional{' '}
-            <div>
+            <h5 className='text-center'>Contact Type</h5>
+            <input style={radioStyle} type='radio' name='type' value='personal' checked={type === 'personal'} onChange={onChange} />Personal{' '}<br/>
+            <input style={radioStyle} type='radio' name='type' value='professional' checked={type === 'professional'} onChange={onChange} /> Professional{' '}
+           <div>
             <input type='submit' value={current? 'Update Contact' : 'Add Contact'} className=' btn btn-primary btn-block' />
             </div>
             {current && <div>

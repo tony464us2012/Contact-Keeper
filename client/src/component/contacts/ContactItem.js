@@ -14,7 +14,7 @@ const ContactItem = ({ contact }) => {
 
     return (
         <div className="card bg-light">
-            <h3 className="text-primary text-left name">
+            <h3 className="text-primary name">
                 {name}{' '}
                 <span style={{float: 'right'}}
                  className={'badge badge-primary ' + (type === 'professional' ? 'badge-success' : 'badge-primary')}>
@@ -34,8 +34,8 @@ const ContactItem = ({ contact }) => {
                 )}
             </ul>
             <p>
-                <button className='btn btn-dark btn-sm' onClick={() => setCurrent(contact)}>Edit</button>
-                <button className='btn btn-danger btn-sm' onClick={onDelete}>Delete</button>
+                <button className='btn btn-dark btn-med edit-btn' onClick={() => setCurrent(contact)}>Edit</button>
+                <button className='btn btn-danger btn-med remove-btn' onClick={onDelete}>Delete</button>
             </p>
         </div>
     )

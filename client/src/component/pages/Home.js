@@ -13,13 +13,15 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="dash-cont">
-            <div>
-               <ContactForm />
-            </div>
-            <div>
-                <ContactFiltered />
-                <Contacts />
+        <div className='home-cont'>
+            <div className="dash-cont">
+                <div>
+                <ContactForm />
+                </div>
+                <div>
+                    <ContactFiltered />
+                    <Contacts />
+                </div>
             </div>
         </div>
     )
