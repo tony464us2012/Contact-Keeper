@@ -1,4 +1,4 @@
 {
-    "MONGO_URI": "mongodb+srv://tony464us2012:Anthony464$@cluster0-yph25.mongodb.net/ContactKeeper?retryWrites=true&w=majority",
-    "JWT_Secret": "aogornslkflkncllkb"
+    "MONGO_URI": "#####",
+    "JWT_Secret": "####"
 }
